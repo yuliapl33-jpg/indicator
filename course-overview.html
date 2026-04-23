@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>קורס שוק ההון אונליין | Indicator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.gstatic.com/s/assistant/v24/2sDcZGJYnIjSi6H75xkzamW5Kb8VZBHR.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://fonts.gstatic.com/s/assistant/v24/2sDcZGJYnIjSi6H75xkzaGW5Kb8VZA.woff2" as="font" type="font/woff2" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== LOGGED-IN HEADER ========== -->
+  <header class="site-header">
+    <nav class="nav-pill" role="navigation" aria-label="ניווט ראשי">
+      <div class="nav-inner">
+
+        <a href="index.html" class="nav-logo" aria-label="Indicator - עמוד הבית">
+          <img src="images/logo.svg" alt="Indicator - האקדמיה ללימוד שוק ההון" width="215" height="58">
+        </a>
+
+        <ul class="nav-links" role="list">
+          <li><a href="index.html">בית</a></li>
+          <li><a href="courses.html">קורסים</a></li>
+          <li><a href="analysis.html">ניתוח מניות ומדדים</a></li>
+          <li><a href="about.html">אודות</a></li>
+          <li><a href="contact.html">יצירת קשר</a></li>
+        </ul>
+
+        <div class="nav-user" id="navUser">
+          <button class="nav-user-btn" id="navUserBtn" aria-expanded="false" aria-haspopup="true" aria-controls="navUserDropdown">
+            <span class="nav-user-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="4"/>
+                <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+              </svg>
+            </span>
+            <span>ישראל ישראלי</span>
+            <svg class="nav-user-chevron" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="nav-user-dropdown" id="navUserDropdown" role="menu">
+            <a href="course-viewer.html" role="menuitem">הקורסים שלי</a>
+            <a href="profile.html" role="menuitem">פרטים אישיים</a>
+            <a href="index.html" role="menuitem">יציאה</a>
+          </div>
+        </div>
+
+        <button class="hamburger" aria-label="פתח תפריט" aria-expanded="false" aria-controls="mobile-menu-co">
+          <span></span><span></span><span></span>
+        </button>
+
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu-co" aria-hidden="true">
+      <ul role="list">
+        <li><a href="index.html">בית</a></li>
+        <li><a href="courses.html">קורסים</a></li>
+        <li><a href="analysis.html">ניתוח מניות ומדדים</a></li>
+        <li><a href="about.html">אודות</a></li>
+        <li><a href="contact.html">יצירת קשר</a></li>
+      </ul>
+      <div class="nav-user-mobile">
+        <span class="nav-user-mobile-name">ישראל ישראלי</span>
+        <div class="nav-user-mobile-links">
+          <a href="course-viewer.html">הקורסים שלי</a>
+          <a href="profile.html">פרטים אישיים</a>
+          <a href="index.html">יציאה</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MAIN ========== -->
+  <main class="co-main">
+
+    <!-- ── Hero ─────────────────────────────────────────────────── -->
+    <section class="co-hero" aria-labelledby="co-course-title">
+      <div class="co-hero-inner">
+
+        <nav class="co-breadcrumb" aria-label="ניווט מיקום">
+          <div class="breadcrumb-inner">
+            <a href="index.html" class="breadcrumb-link">עמוד הבית</a>
+            <span class="breadcrumb-sep" aria-hidden="true">›</span>
+            <a href="course-viewer.html" class="breadcrumb-link">הקורסים שלי</a>
+            <span class="breadcrumb-sep" aria-hidden="true">›</span>
+            <span class="breadcrumb-current" aria-current="page">קורס שוק ההון אונליין</span>
+          </div>
+        </nav>
+
+        <div class="co-hero-center">
+          <h1 class="co-hero-title" id="co-course-title">קורס שוק ההון אונליין</h1>
+
+          <div class="co-progress-wrap" role="progressbar" aria-valuenow="39" aria-valuemin="0" aria-valuemax="100" aria-label="התקדמות בקורס: 39%">
+            <div class="co-progress-bar">
+              <div class="co-progress-fill" style="width:39%"></div>
+              <span class="co-progress-label">% <span class="co-progress-num">39</span> הושלמו</span>
+            </div>
+          </div>
+
+          <p class="co-last-activity">הפעילות האחרונה ב-05.02.2026 18:08</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── Course Content ────────────────────────────────────────── -->
+    <div class="co-content">
+      <div class="co-content-inner">
+
+        <!-- ── Chapter 01 ─────────────────────────────────────── -->
+        <div class="co-chapter co-chapter--open">
+          <button class="co-chapter-btn" aria-expanded="true" aria-controls="co-ch-01">
+            <div class="co-chapter-meta">
+              <span class="co-chapter-num">01</span>
+              <span class="co-chapter-title">מבוא לשוק ההון</span>
+            </div>
+            <svg class="co-chevron" width="40" height="40" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+              <path d="M6 9l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <ul class="co-lessons" id="co-ch-01" role="list">
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--done" aria-label="הושלם">
+                  <svg width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">הקדמה</span>
+                  <span class="co-lesson-num">שיעור 1</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--done" aria-label="הושלם">
+                  <svg width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">מהו שוק ההון ומהי הבורסה</span>
+                  <span class="co-lesson-num">שיעור 2</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--done" aria-label="הושלם">
+                  <svg width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">מהי מניה ומהו ניר ערך</span>
+                  <span class="co-lesson-num">שיעור 3</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--done" aria-label="הושלם">
+                  <svg width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">מהי אגרת חוב</span>
+                  <span class="co-lesson-num">שיעור 4</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--done" aria-label="הושלם">
+                  <svg width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">מהי הנפקה ולמה חברות נסחרות</span>
+                  <span class="co-lesson-num">שיעור 5</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--done" aria-label="הושלם">
+                  <svg width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">איך נקבע מחיר של ניר ערך</span>
+                  <span class="co-lesson-num">שיעור 6</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--done" aria-label="הושלם">
+                  <svg width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">מדדים, שוקים פסיביים ומנהלים</span>
+                  <span class="co-lesson-num">שיעור 7</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--done" aria-label="הושלם">
+                  <svg width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">קרנות נאמנות ותעודות סל</span>
+                  <span class="co-lesson-num">שיעור 8</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--done" aria-label="הושלם">
+                  <svg width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">מניות דיוידנד</span>
+                  <span class="co-lesson-num">שיעור 9</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--done" aria-label="הושלם">
+                  <svg width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">מחזור חיי חברה — לידה, צמיחה ודעיכה</span>
+                  <span class="co-lesson-num">שיעור 10</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--done" aria-label="הושלם">
+                  <svg width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">פונג, שורט, סטופ לוס ושורט סקוויז</span>
+                  <span class="co-lesson-num">שיעור 11</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--done" aria-label="הושלם">
+                  <svg width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">ריבית בנק ישראל וריבית מרכנתיל</span>
+                  <span class="co-lesson-num">שיעור 12</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--done" aria-label="הושלם">
+                  <svg width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">בנצ'מארק</span>
+                  <span class="co-lesson-num">שיעור 13</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--done" aria-label="הושלם">
+                  <svg width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">אנומליות ומדד המחירים לצרכן</span>
+                  <span class="co-lesson-num">שיעור 14</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--done" aria-label="הושלם">
+                  <svg width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">מיסוי, דמי ניהול ועמלות</span>
+                  <span class="co-lesson-num">שיעור 15</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--done" aria-label="הושלם">
+                  <svg width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">ריבית דריבית</span>
+                  <span class="co-lesson-num">שיעור 16</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--done" aria-label="הושלם">
+                  <svg width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">פיזור מניות</span>
+                  <span class="co-lesson-num">שיעור 17</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--done" aria-label="הושלם">
+                  <svg width="20" height="20" viewBox="0 0 16 16" fill="none"><path d="M3 8l4 4 6-6" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">סיכום הפרק</span>
+                  <span class="co-lesson-num">שיעור 18</span>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+        </div><!-- /co-chapter 01 -->
+
+        <!-- ── Chapter 02 ─────────────────────────────────────── -->
+        <div class="co-chapter">
+          <button class="co-chapter-btn" aria-expanded="false" aria-controls="co-ch-02">
+            <div class="co-chapter-meta">
+              <span class="co-chapter-num">02</span>
+              <span class="co-chapter-title">קורס ניתוח טכני</span>
+            </div>
+             <svg class="co-chevron" width="40" height="40" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+              <path d="M6 9l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <ul class="co-lessons" id="co-ch-02" role="list">
+
+            <!-- Sub-section: גרפים -->
+            <li class="co-sub-heading" role="presentation">גרפים</li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--spinner" aria-label="לא הותחל"><span class="co-spinner" aria-hidden="true"></span></span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">גרף נרות ומגמות</span>
+                  <span class="co-lesson-num">שיעור 1</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--spinner" aria-label="לא הותחל"><span class="co-spinner" aria-hidden="true"></span></span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">תמיכה והתנגדות</span>
+                  <span class="co-lesson-num">שיעור 2</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--spinner" aria-label="לא הותחל"><span class="co-spinner" aria-hidden="true"></span></span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">קווי מגמה וערוצים</span>
+                  <span class="co-lesson-num">שיעור 3</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--spinner" aria-label="לא הותחל"><span class="co-spinner" aria-hidden="true"></span></span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">תבניות גרפיות — המשך</span>
+                  <span class="co-lesson-num">שיעור 4</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--spinner" aria-label="לא הותחל"><span class="co-spinner" aria-hidden="true"></span></span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">ממוצעים נעים</span>
+                  <span class="co-lesson-num">שיעור 5</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--spinner" aria-label="לא הותחל"><span class="co-spinner" aria-hidden="true"></span></span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">נפח מסחר ומה הוא מסמן</span>
+                  <span class="co-lesson-num">שיעור 6</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--spinner" aria-label="לא הותחל"><span class="co-spinner" aria-hidden="true"></span></span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">ניתוח מרובה מסגרות זמן</span>
+                  <span class="co-lesson-num">שיעור 7</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--spinner" aria-label="לא הותחל"><span class="co-spinner" aria-hidden="true"></span></span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">פסיכולוגיה של שוק ההון</span>
+                  <span class="co-lesson-num">שיעור 8</span>
+                </div>
+              </a>
+            </li>
+
+            <!-- Sub-section: אינדיקטורים ומתנדים -->
+            <li class="co-sub-heading" role="presentation">אינדיקטורים ומתנדים</li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--spinner" aria-label="לא הותחל"><span class="co-spinner" aria-hidden="true"></span></span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">RSI — מדד כוח יחסי</span>
+                  <span class="co-lesson-num">שיעור 1</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--spinner" aria-label="לא הותחל"><span class="co-spinner" aria-hidden="true"></span></span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">MACD — התכנסות והתרחקות ממוצעים</span>
+                  <span class="co-lesson-num">שיעור 2</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--spinner" aria-label="לא הותחל"><span class="co-spinner" aria-hidden="true"></span></span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">רצועות בולינגר</span>
+                  <span class="co-lesson-num">שיעור 3</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--spinner" aria-label="לא הותחל"><span class="co-spinner" aria-hidden="true"></span></span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">סטוכסטיק ו-CCI</span>
+                  <span class="co-lesson-num">שיעור 4</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--spinner" aria-label="לא הותחל"><span class="co-spinner" aria-hidden="true"></span></span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">פיבונאצ'י ורמות מפתח</span>
+                  <span class="co-lesson-num">שיעור 5</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--spinner" aria-label="לא הותחל"><span class="co-spinner" aria-hidden="true"></span></span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">ניהול סיכונים ועסקאות</span>
+                  <span class="co-lesson-num">שיעור 6</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--spinner" aria-label="לא הותחל"><span class="co-spinner" aria-hidden="true"></span></span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">פתיחת עסקה ראשונה</span>
+                  <span class="co-lesson-num">שיעור 7</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--spinner" aria-label="לא הותחל"><span class="co-spinner" aria-hidden="true"></span></span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">סיכום ומסחר מעשי</span>
+                  <span class="co-lesson-num">שיעור 8</span>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+        </div><!-- /co-chapter 02 -->
+
+        <!-- ── Chapter 03 ─────────────────────────────────────── -->
+        <div class="co-chapter">
+          <button class="co-chapter-btn" aria-expanded="false" aria-controls="co-ch-03">
+            <div class="co-chapter-meta">
+              <span class="co-chapter-num">03</span>
+              <span class="co-chapter-title">בניית תיק השקעות</span>
+            </div>
+             <svg class="co-chevron" width="40" height="40" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+              <path d="M6 9l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <ul class="co-lessons" id="co-ch-03" role="list">
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--spinner" aria-label="לא הותחל"><span class="co-spinner" aria-hidden="true"></span></span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">אסטרטגיית השקעה ארוכת טווח</span>
+                  <span class="co-lesson-num">שיעור 1</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--spinner" aria-label="לא הותחל"><span class="co-spinner" aria-hidden="true"></span></span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">פיזור נכסים ואיזון תיק</span>
+                  <span class="co-lesson-num">שיעור 2</span>
+                </div>
+              </a>
+            </li>
+
+            <li class="co-lesson">
+              <a href="course-lesson.html" class="co-lesson-link">
+                <span class="co-icon co-icon--spinner" aria-label="לא הותחל"><span class="co-spinner" aria-hidden="true"></span></span>
+                <div class="co-lesson-info">
+                  <span class="co-lesson-name">ניהול פיננסים אישי</span>
+                  <span class="co-lesson-num">שיעור 3</span>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+        </div><!-- /co-chapter 03 -->
+
+      </div><!-- /co-content-inner -->
+    </div><!-- /co-content -->
+
+  </main>
+
+  <script src="footer.js"></script>
+
+  <script>
+    // ── Nav: user dropdown ──────────────────────────────────────
+    (function () {
+      var navUser    = document.getElementById('navUser');
+      var navUserBtn = document.getElementById('navUserBtn');
+      if (!navUser || !navUserBtn) return;
+      navUserBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var isOpen = navUser.classList.toggle('open');
+        navUserBtn.setAttribute('aria-expanded', isOpen);
+      });
+      document.addEventListener('click', function (e) {
+        if (!navUser.contains(e.target)) {
+          navUser.classList.remove('open');
+          navUserBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && navUser.classList.contains('open')) {
+          navUser.classList.remove('open');
+          navUserBtn.setAttribute('aria-expanded', 'false');
+          navUserBtn.focus();
+        }
+      });
+    }());
+
+    // ── Mobile menu ─────────────────────────────────────────────
+    (function () {
+      var hamburger  = document.querySelector('.hamburger');
+      var mobileMenu = document.getElementById('mobile-menu-co');
+      if (!hamburger || !mobileMenu) return;
+      hamburger.addEventListener('click', function () {
+        var isOpen = mobileMenu.classList.toggle('open');
+        hamburger.classList.toggle('open', isOpen);
+        hamburger.setAttribute('aria-expanded', isOpen);
+        mobileMenu.setAttribute('aria-hidden', !isOpen);
+      });
+      mobileMenu.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          mobileMenu.classList.remove('open');
+          hamburger.classList.remove('open');
+          hamburger.setAttribute('aria-expanded', false);
+          mobileMenu.setAttribute('aria-hidden', true);
+        });
+      });
+    }());
+
+    // ── Chapter accordion ───────────────────────────────────────
+    (function () {
+      document.querySelectorAll('.co-chapter-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var chapter = btn.closest('.co-chapter');
+          var isOpen  = chapter.classList.contains('co-chapter--open');
+          chapter.classList.toggle('co-chapter--open', !isOpen);
+          btn.setAttribute('aria-expanded', !isOpen);
+        });
+      });
+    }());
+  </script>
+
+</body>
+</html>

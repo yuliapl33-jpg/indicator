@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>אודות - Indicator | האקדמיה ללימוד שוק ההון</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Preload the Hebrew and Latin subsets — highest priority woff2 files for Assistant -->
+  <link rel="preload" href="https://fonts.gstatic.com/s/assistant/v24/2sDcZGJYnIjSi6H75xkzamW5Kb8VZBHR.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://fonts.gstatic.com/s/assistant/v24/2sDcZGJYnIjSi6H75xkzaGW5Kb8VZA.woff2" as="font" type="font/woff2" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="header.js"></script>
+
+  <!-- ========== MAIN ========== -->
+  <main class="ab-main">
+
+    <!-- Breadcrumb: reads right-to-left as [עמוד הבית] [‹] [אודות] -->
+    <nav class="breadcrumb-bar" aria-label="ניווט מיקום">
+      <div class="breadcrumb-inner">
+        <a href="index.html" class="breadcrumb-link">עמוד הבית</a>
+        <span class="breadcrumb-sep" aria-hidden="true">›</span>
+        <span class="breadcrumb-current" aria-current="page">אודות</span>
+      </div>
+    </nav>
+
+    <!-- ── Section 1: Why we founded Indicator ──────────────────
+         RTL flex row: content (right) first in DOM, image (left) second
+    ─────────────────────────────────────────────────────────── -->
+    <section class="ab-split" aria-labelledby="ab-why-heading">
+
+      <!-- Content: right side (first child in RTL flex) -->
+      <div class="ab-split-content">
+        <span class="ab-badge">אודות</span>
+        <h1 class="ab-title" id="ab-why-heading">למה הקמנו את מכללת אינדיקטור?</h1>
+        <p class="ab-text">מכללת אינדיקטור הוקמה מתוך חכמה פשוטה. רוב האנשים לא קיבלו מעולם את הכלים ללמוד באמת איך כסף עובד. למרות שזה אחד התחומים המשפיעים ביותר על החיים שלנו.</p>
+        <p class="ab-text">לאורך השנים, פגשנו שוב ושוב אנשים חכמים, חרוצים ובעלי פוטנציאל, שפשוט לא יכלו לעלות על עולם ההשקעות. חלקם חשבו שזה מורכב מדי, רבים האמינו שזה תחום רק למי שכבר יש לו הון גדול. אנחנו ראינו מציאות אחרת, וידענו שאפשר לשנות אותה.</p>
+        <p class="ab-text">המטרה שלנו הייתה ברורה: להפוך את הפיננסי לנגיש, ברור ויישים. בלי הבטחות שווא ובלי קיצורי דרך.</p>
+      </div>
+
+      <!-- Image: left side (second child in RTL flex) -->
+      <div class="ab-split-img">
+        <img src="images/about-img-1.png" alt="סטודנטית לומדת ניתוח שוק ההון מול מסכי מחשב" loading="lazy">
+      </div>
+
+    </section>
+
+    <!-- ── Section 2: We believe ─────────────────────────────────
+         RTL flex row: image (right) first in DOM, content (left) second
+    ─────────────────────────────────────────────────────────── -->
+    <section class="ab-split ab-split--reverse" aria-labelledby="ab-believe-heading">
+
+      <!-- Image: right side (first child in RTL flex) -->
+      <div class="ab-split-img">
+        <img src="images/about-img-2.png" alt="משקיע מנוסה מנתח נתוני שוק ההון" loading="lazy">
+      </div>
+
+      <!-- Content: left side (second child in RTL flex) -->
+      <div class="ab-split-content">
+        <h2 class="ab-title" id="ab-believe-heading">אנחנו מאמינים</h2>
+        <p class="ab-text">שכשתהיה לכם הבנה אמיתית על עולם הכסף, תוכלו לקבל החלטות מתוך ביטחון. ידע עמוק הוא הבסיס לכל הצלחה פיננסית. במקום "טיפים" רגעיים או ניחושים, אנחנו מלמדים איך לחשוב, לנתח ולהבין את השוק. מאחורי כל השקעה עומדים חיים אמיתיים, לכן חשוב לנו להכיר ולהקשיב לכם כשאנחנו מלווים אתכם בצורה אישית לאורך הדרך.</p>
+        <p class="ab-text">בשורה התחתונה, יש לנו ראייה לטווח ארוך. אנחנו מחפשים תוצאות, והדגש הוא על צמיחה יציבה, התמדה וקבלת החלטות שקולות לאורך זמן. אנחנו כאן כדי לעזור לכם לקבל שליטה והבנה, לא לנחש. בין אם אתם רק מתחילים ובין אם אתם רוצים להתקדם לשלב הבא, אנחנו כאן כדי ללוות אתכם בדרך.</p>
+      </div>
+
+    </section>
+
+     <!-- ========== WHY CHOOSE US SECTION (node 124-6088) ========== -->
+  <section class="why-section" aria-labelledby="why-heading">
+    <div class="why-inner">
+
+      <!-- Right column: heading + body text -->
+      <div class="why-text">
+        <h2 class="why-title" id="why-heading">למה לבחור בנו?</h2>
+        <div class="why-body">
+          <p>זו שאלה מצוינת. הרשת מלאה במדריכים חינמיים ובקורסים בסיסיים. אבל אנחנו לא כאן רק כדי לתת לכם כלים טכניים ולהיפרד לשלום. להרוויח כסף זה רק הצעד הראשון, וזה יביא אותך רק עד רמה מסוימת.</p>
+          <p>אצלנו ניכנס למערכת אקולוגית שלמה: קהילה תוססת, מפגשי העשרה, מסחר בזמן אמת (LIVE), סקירות שוק שבועיות ישירות אליכם, מעדכנים את הקורס באופן קבוע, אנחנו זמינים בוואטסאפ לכל שאלה — וזה נדיר בנוף הזה! אנחנו נושמים את שוק ההון כל יום, ומזמינים אתכם לצמוח יחד איתנו.</p>
+        </div>
+      </div>
+
+      <!-- Left column: 2×2 feature cards -->
+      <div class="why-cards">
+
+        <article class="why-card">
+          <img class="why-card-icon" src="images/icon-2.png" alt="" aria-hidden="true">
+          <div class="why-card-body">
+            <h3 class="why-card-title">תוכן מעשי</h3>
+            <p class="why-card-desc">אסטרטגיות מסחר אמיתיות לסוחרים מקצועיים. שעות של תרגול ויישום ללמידת החומר.</p>
+          </div>
+        </article>
+
+        <article class="why-card">
+          <img class="why-card-icon" src="images/icon-2.png" alt="" aria-hidden="true">
+          <div class="why-card-body">
+            <h3 class="why-card-title">מומחים בעלי ניסיון</h3>
+            <p class="why-card-desc">מעל 20 שנות ניסיון בשווקים, בהשקעות, במסחר. ידע מעשי ולא רק תאוריות.</p>
+          </div>
+        </article>
+
+        <article class="why-card">
+          <img class="why-card-icon" src="images/icon-4.png" alt="" aria-hidden="true">
+          <div class="why-card-body">
+            <h3 class="why-card-title">גישה לכל החיים</h3>
+            <p class="why-card-desc">גישה בלתי מוגבלת לכל החומרים, עדכונים חינם וחומרים חדשים.</p>
+          </div>
+        </article>
+
+        <article class="why-card">
+           <img class="why-card-icon" src="images/icon-3.png" alt="" aria-hidden="true">
+          <div class="why-card-body">
+            <h3 class="why-card-title">תמיכה מלאה</h3>
+            <p class="why-card-desc">קהילה, מפגשים, מסחר Live אמיתי, סקירות שבועיות, מענה לשאלות.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+    <!-- ── CTA Section ─────────────────────────────────────────── -->
+    <div class="ab-cta-wrap">
+      <section class="ab-cta" aria-labelledby="ab-cta-heading">
+        <h2 class="ab-cta-title" id="ab-cta-heading">רוצים להתחיל?</h2>
+        <p class="ab-cta-sub">צוות המומחים שלנו כאן כדי לעזור לך למצוא את הקורס המתאים</p>
+        <div class="ab-cta-btns">
+          <a href="courses.html" class="ab-cta-btn ab-cta-btn--dark">לצפייה בקורסים שלנו</a>
+          <a href="contact.html" class="ab-cta-btn ab-cta-btn--green">ליצירת קשר</a>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+<script src="footer.js"></script>
+  <script src="modal.js"></script>
+
+</body>
+</html>

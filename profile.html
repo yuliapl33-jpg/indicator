@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>פרטים אישיים | Indicator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.gstatic.com/s/assistant/v24/2sDcZGJYnIjSi6H75xkzamW5Kb8VZBHR.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://fonts.gstatic.com/s/assistant/v24/2sDcZGJYnIjSi6H75xkzaGW5Kb8VZA.woff2" as="font" type="font/woff2" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== LOGGED-IN HEADER ========== -->
+  <header class="site-header">
+    <nav class="nav-pill" role="navigation" aria-label="ניווט ראשי">
+      <div class="nav-inner">
+
+        <a href="index.html" class="nav-logo" aria-label="Indicator - עמוד הבית">
+          <img src="images/logo.svg" alt="Indicator - האקדמיה ללימוד שוק ההון" width="215" height="58">
+        </a>
+
+        <ul class="nav-links" role="list">
+          <li><a href="index.html">בית</a></li>
+          <li><a href="courses.html">קורסים</a></li>
+          <li><a href="analysis.html">ניתוח מניות ומדדים</a></li>
+          <li><a href="about.html">אודות</a></li>
+          <li><a href="contact.html">יצירת קשר</a></li>
+        </ul>
+
+        <div class="nav-user" id="navUser">
+          <button class="nav-user-btn" id="navUserBtn" aria-expanded="false" aria-haspopup="true" aria-controls="navUserDropdown">
+            <span class="nav-user-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="4"/>
+                <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+              </svg>
+            </span>
+            <span>ישראל ישראלי</span>
+            <svg class="nav-user-chevron" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="nav-user-dropdown" id="navUserDropdown" role="menu">
+            <a href="course-viewer.html" role="menuitem">הקורסים שלי</a>
+            <a href="profile.html" role="menuitem" class="active">פרטים אישיים</a>
+            <a href="index.html" role="menuitem">יציאה</a>
+          </div>
+        </div>
+
+        <button class="hamburger" aria-label="פתח תפריט" aria-expanded="false" aria-controls="mobile-menu-profile">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu-profile" aria-hidden="true">
+      <ul role="list">
+        <li><a href="index.html">בית</a></li>
+        <li><a href="courses.html">קורסים</a></li>
+        <li><a href="analysis.html">ניתוח מניות ומדדים</a></li>
+        <li><a href="about.html">אודות</a></li>
+        <li><a href="contact.html">יצירת קשר</a></li>
+      </ul>
+      <div class="nav-user-mobile">
+        <span class="nav-user-mobile-name">ישראל ישראלי</span>
+        <div class="nav-user-mobile-links">
+          <a href="course-viewer.html">הקורסים שלי</a>
+          <a href="profile.html">פרטים אישיים</a>
+          <a href="index.html">יציאה</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="up-main">
+
+    <nav class="breadcrumb-bar" aria-label="ניווט מיקום">
+      <div class="breadcrumb-inner">
+        <a href="index.html" class="breadcrumb-link">עמוד הבית</a>
+        <span class="breadcrumb-sep" aria-hidden="true">›</span>
+        <span class="breadcrumb-current" aria-current="page">פרטים אישיים</span>
+      </div>
+    </nav>
+
+    <section class="up-section" aria-labelledby="up-heading">
+      <div class="up-inner">
+
+        <div class="up-card">
+
+          <!-- Avatar + name header -->
+          <div class="up-card-header">
+            <div class="up-avatar" aria-hidden="true">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="4"/>
+                <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+              </svg>
+            </div>
+            <div class="up-card-header-text">
+              <h1 class="up-card-name" id="up-heading">ישראל ישראלי</h1>
+              <p class="up-card-email">israel@example.com</p>
+            </div>
+          </div>
+
+          <form class="up-form" novalidate>
+
+            <!-- ── Personal details ── -->
+            <h2 class="up-form-section-title">פרטים אישיים</h2>
+
+            <div class="cp-row">
+              <div class="cp-field">
+                <input class="cp-input" id="up-first-name" type="text" placeholder=" " value="ישראל" autocomplete="given-name">
+                <label class="cp-floating-label" for="up-first-name">שם פרטי</label>
+              </div>
+              <div class="cp-field">
+                <input class="cp-input" id="up-last-name" type="text" placeholder=" " value="ישראלי" autocomplete="family-name">
+                <label class="cp-floating-label" for="up-last-name">שם משפחה</label>
+              </div>
+            </div>
+
+            <div class="cp-row">
+              <div class="cp-field">
+                <input class="cp-input" id="up-phone" type="tel" placeholder=" " value="054-000-0000" autocomplete="tel">
+                <label class="cp-floating-label" for="up-phone">טלפון</label>
+              </div>
+              <div class="cp-field">
+                <input class="cp-input" id="up-email" type="email" placeholder=" " value="israel@example.com" autocomplete="email">
+                <label class="cp-floating-label" for="up-email">מייל</label>
+              </div>
+            </div>
+
+            <div class="up-divider"></div>
+
+            <!-- ── Password change ── -->
+            <h2 class="up-form-section-title">שינוי סיסמה</h2>
+
+            <div class="cp-field">
+              <input class="cp-input" id="up-current-pass" type="password" placeholder=" " autocomplete="current-password">
+              <label class="cp-floating-label" for="up-current-pass">סיסמה נוכחית</label>
+            </div>
+
+            <div class="cp-row">
+              <div class="cp-field">
+                <input class="cp-input" id="up-new-pass" type="password" placeholder=" " autocomplete="new-password">
+                <label class="cp-floating-label" for="up-new-pass">סיסמה חדשה</label>
+              </div>
+              <div class="cp-field">
+                <input class="cp-input" id="up-confirm-pass" type="password" placeholder=" " autocomplete="new-password">
+                <label class="cp-floating-label" for="up-confirm-pass">אימות סיסמה</label>
+              </div>
+            </div>
+
+            <div class="up-form-footer">
+              <button type="submit" class="up-submit">שמירת שינויים</button>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <script src="footer.js"></script>
+
+  <script>
+    // Mobile menu toggle
+    (function () {
+      var hamburger  = document.querySelector('.hamburger');
+      var mobileMenu = document.getElementById('mobile-menu-profile');
+      if (!hamburger || !mobileMenu) return;
+      hamburger.addEventListener('click', function () {
+        var isOpen = mobileMenu.classList.toggle('open');
+        hamburger.classList.toggle('open', isOpen);
+        hamburger.setAttribute('aria-expanded', isOpen);
+        mobileMenu.setAttribute('aria-hidden', !isOpen);
+      });
+      mobileMenu.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          mobileMenu.classList.remove('open');
+          hamburger.classList.remove('open');
+          hamburger.setAttribute('aria-expanded', false);
+          mobileMenu.setAttribute('aria-hidden', true);
+        });
+      });
+    }());
+
+    // Nav user dropdown toggle
+    (function () {
+      var btn      = document.getElementById('navUserBtn');
+      var dropdown = document.getElementById('navUserDropdown');
+      var wrapper  = document.getElementById('navUser');
+      if (!btn || !dropdown) return;
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var isOpen = wrapper.classList.toggle('open');
+        btn.setAttribute('aria-expanded', isOpen);
+      });
+      document.addEventListener('click', function () {
+        wrapper.classList.remove('open');
+        btn.setAttribute('aria-expanded', false);
+      });
+    }());
+  </script>
+
+</body>
+</html>

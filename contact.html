@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>יצירת קשר - Indicator | האקדמיה ללימוד שוק ההון</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Preload the Hebrew and Latin subsets — highest priority woff2 files for Assistant -->
+  <link rel="preload" href="https://fonts.gstatic.com/s/assistant/v24/2sDcZGJYnIjSi6H75xkzamW5Kb8VZBHR.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://fonts.gstatic.com/s/assistant/v24/2sDcZGJYnIjSi6H75xkzaGW5Kb8VZA.woff2" as="font" type="font/woff2" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="header.js"></script>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="cp-main">
+
+    <!-- Breadcrumb: reads right-to-left as [עמוד הבית] [‹] [יצירת קשר] -->
+    <nav class="breadcrumb-bar" aria-label="ניווט מיקום">
+      <div class="breadcrumb-inner">
+        <a href="index.html" class="breadcrumb-link">עמוד הבית</a>
+        <span class="breadcrumb-sep" aria-hidden="true">›</span>
+        <span class="breadcrumb-current" aria-current="page">יצירת קשר</span>
+      </div>
+    </nav>
+
+    <!-- Contact section -->
+    <section class="cp-section" aria-labelledby="cp-heading">
+      <div class="cp-inner">
+
+        <!-- Right column (first in RTL): dark info card -->
+        <div class="cp-card">
+          <span class="cp-card-badge">יצירת קשר</span>
+          <h1 class="cp-card-title" id="cp-heading">דברו איתנו</h1>
+          <p class="cp-card-desc">צוות השירות שלנו כאן בשבילכם. בחרו את הדרך שנוחה לכם ליצור איתנו קשר ונחזור אליכם בהקדם.</p>
+
+          <div class="cp-methods">
+
+            <a href="https://wa.me/9720540000000" class="cp-method" target="_blank" rel="noopener noreferrer">
+              <div class="cp-method-icon">
+                <img src="images/icon_contact_whatsapp.png" alt="וואטסאפ">
+              </div>
+              <div class="cp-method-text">
+                <span class="cp-method-label">שלחו לנו הודעת וואטסאפ</span>
+                <span class="cp-method-value">054-000-0000</span>
+              </div>
+            </a>
+
+            <a href="tel:0540000000" class="cp-method">
+              <div class="cp-method-icon">
+                <img src="images/icon_contact_call.png" alt="טלפון">
+              </div>
+              <div class="cp-method-text">
+                <span class="cp-method-label">התקשרו אלינו</span>
+                <span class="cp-method-value">054-000-0000</span>
+              </div>
+            </a>
+
+            <a href="mailto:indicator.276@gmail.com" class="cp-method">
+              <div class="cp-method-icon">
+                <img src="images/icon_contact_email.png" alt="מייל">
+              </div>
+              <div class="cp-method-text">
+                <span class="cp-method-label">שלחו לנו מייל</span>
+                <span class="cp-method-value">indicator.276@gmail.com</span>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- Left column (second in RTL): contact form -->
+        <div class="cp-form-side">
+          <h2 class="cp-form-title">השאירו פרטים ונחזור אליכם בהקדם</h2>
+
+          <form class="cp-form" novalidate>
+
+            <div class="cp-row">
+              <div class="cp-field">
+                <input class="cp-input" id="cp-first-name" type="text" placeholder=" " required autocomplete="given-name">
+                <label class="cp-floating-label" for="cp-first-name">שם פרטי*</label>
+              </div>
+              <div class="cp-field">
+                <input class="cp-input" id="cp-last-name" type="text" placeholder=" " required autocomplete="family-name">
+                <label class="cp-floating-label" for="cp-last-name">שם משפחה*</label>
+              </div>
+            </div>
+
+            <div class="cp-row">
+              <div class="cp-field">
+                <input class="cp-input" id="cp-phone" type="tel" placeholder=" " required autocomplete="tel">
+                <label class="cp-floating-label" for="cp-phone">טלפון*</label>
+              </div>
+              <div class="cp-field">
+                <input class="cp-input" id="cp-email" type="email" placeholder=" " autocomplete="email">
+                <label class="cp-floating-label" for="cp-email">מייל</label>
+              </div>
+            </div>
+
+            <div class="cp-field">
+              <textarea class="cp-textarea" id="cp-message" placeholder=" " rows="5"></textarea>
+              <label class="cp-floating-label cp-floating-label--textarea" for="cp-message">הודעה</label>
+            </div>
+
+            <div class="cp-form-footer">
+              <label class="cp-checkbox-label">
+                <input type="checkbox" required>
+                <span>קראתי ואני מאשר/ת את <a href="#">מדיניות הפרטיות</a> ו<a href="#">תנאי השימוש</a> המפורטים, לרבות הסכמתי לקבלת תכנים מקצועיים, עדכונים והצעות שיווקיות מאתר אינדיקטור.</span>
+              </label>
+              <button type="submit" class="cp-submit">שליחה</button>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+
+  </main><!-- /.cp-main -->
+
+  <!-- ========== FAQ SECTION ========== -->
+  <section class="faq-section" aria-labelledby="faq-heading-contact">
+    <h2 class="faq-title" id="faq-heading-contact">שאלות נפוצות</h2>
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-row" aria-expanded="false">
+          <span class="faq-num">01</span>
+          <span class="faq-q">האם הקורס מתאים למתחילים לחלוטין?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>הקורס מיועד לכל רמות הידע. אם אתם מתחילים לחלוטין, תמצאו תכנים מסודרים המובילים אתכם בצעד אחר צעד מהבסיס ועד לשליטה מלאה. אם יש לכם כבר ניסיון כלשהו בשוק ההון, תוכלו לדלג על החלקים הבסיסיים ולהתמקד בתכנים המתקדמים יותר המותאמים לרמתכם.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-row" aria-expanded="false">
+          <span class="faq-num">02</span>
+          <span class="faq-q">כמה זמן לוקח להשלים את הקורס?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>משך הקורס תלוי בקצב הלמידה האישי שלכם. הגישה לכל החומרים פתוחה ללא הגבלת זמן, כך שתוכלו ללמוד בקצב שנוח לכם. הקורס מיועד לכל רמות הידע. אם אתם מתחילים לחלוטין, תמצאו תכנים מסודרים המובילים אתכם בצעד אחר צעד מהבסיס ועד לשליטה מלאה. אם יש לכם כבר ניסיון כלשהו בשוק ההון, תוכלו לדלג על החלקים הבסיסיים ולהתמקד בתכנים המתקדמים יותר המותאמים לרמתכם.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-row" aria-expanded="false">
+          <span class="faq-num">03</span>
+          <span class="faq-q">האם יש תמיכה לאחר רכישת הקורס?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>כן! אנחנו מציעים תמיכה מלאה דרך קהילה פעילה, מפגשים, מסחר LIVE וסקירות שבועיות. אנחנו זמינים בוואטסאפ לכל שאלה.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-row" aria-expanded="false">
+          <span class="faq-num">04</span>
+          <span class="faq-q">האם אני צריך הון התחלתי גדול?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>לא. הקורס מלמד כיצד לנהל סיכונים נכון ולהתחיל גם עם הון קטן. נלמד יחד כיצד לבנות תיק השקעות שמתאים לגודל ההון שלכם.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-row" aria-expanded="false">
+          <span class="faq-num">05</span>
+          <span class="faq-q">מה ההבדל בין קורס זה לקורסים אחרים?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>אנחנו מציעים מערכת אקולוגית שלמה — לא רק תוכן, אלא קהילה, ליווי אישי, מסחר בזמן אמת וסקירות שוק שוטפות. הניסיון שלנו עשרים שנה בשווקים הפיננסיים.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-row" aria-expanded="false">
+          <span class="faq-num">06</span>
+          <span class="faq-q">האם החומרים מתעדכנים?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>כן, אנחנו מעדכנים את הקורס באופן קבוע ומוסיפים תכנים חדשים בהתאם לשינויים בשוק. כל העדכונים כלולים ללא עלות נוספת.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-row" aria-expanded="false">
+          <span class="faq-num">07</span>
+          <span class="faq-q">כיצד ניתן לרכוש את הקורס?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>ניתן לרכוש דרך האתר שלנו. לאחר הרכישה תקבלו גישה מיידית לכל החומרים ולקהילה. לשאלות נוספות אנחנו זמינים בוואטסאפ.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+<script src="footer.js"></script>
+  <script src="modal.js"></script>
+
+</body>
+</html>

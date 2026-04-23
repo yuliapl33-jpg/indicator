@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>קורס שוק ההון אונליין - הקורסים שלי | Indicator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.gstatic.com/s/assistant/v24/2sDcZGJYnIjSi6H75xkzamW5Kb8VZBHR.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://fonts.gstatic.com/s/assistant/v24/2sDcZGJYnIjSi6H75xkzaGW5Kb8VZA.woff2" as="font" type="font/woff2" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== LOGGED-IN HEADER ========== -->
+  <!-- This page uses an inline header because the nav differs from the public site:
+       the "כניסת סטודנטים" button is replaced by a logged-in user dropdown. -->
+  <header class="site-header">
+    <nav class="nav-pill" role="navigation" aria-label="ניווט ראשי">
+      <div class="nav-inner">
+
+        <a href="index.html" class="nav-logo" aria-label="Indicator - עמוד הבית">
+          <img src="images/logo.svg" alt="Indicator - האקדמיה ללימוד שוק ההון" width="215" height="58">
+        </a>
+
+        <ul class="nav-links" role="list">
+          <li><a href="index.html">בית</a></li>
+          <li><a href="courses.html">קורסים</a></li>
+          <li><a href="analysis.html">ניתוח מניות ומדדים</a></li>
+          <li><a href="about.html">אודות</a></li>
+          <li><a href="contact.html">יצירת קשר</a></li>
+        </ul>
+
+        <!-- Logged-in user dropdown (replaces btn-students) -->
+        <div class="nav-user" id="navUser">
+          <button class="nav-user-btn" id="navUserBtn" aria-expanded="false" aria-haspopup="true" aria-controls="navUserDropdown">
+            <span class="nav-user-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="4"/>
+                <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+              </svg>
+            </span>
+            <span>ישראל ישראלי</span>
+            <svg class="nav-user-chevron" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="nav-user-dropdown" id="navUserDropdown" role="menu">
+            <a href="course-viewer.html" role="menuitem">הקורסים שלי</a>
+            <a href="profile.html" role="menuitem">פרטים אישיים</a>
+            <a href="index.html" role="menuitem">יציאה</a>
+          </div>
+        </div>
+
+        <button class="hamburger" aria-label="פתח תפריט" aria-expanded="false" aria-controls="mobile-menu-cv">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mobile-menu-cv" aria-hidden="true">
+      <ul role="list">
+        <li><a href="index.html">בית</a></li>
+        <li><a href="courses.html">קורסים</a></li>
+        <li><a href="analysis.html">ניתוח מניות ומדדים</a></li>
+        <li><a href="about.html">אודות</a></li>
+        <li><a href="contact.html">יצירת קשר</a></li>
+      </ul>
+      <div class="nav-user-mobile">
+        <span class="nav-user-mobile-name">ישראל ישראלי</span>
+        <div class="nav-user-mobile-links">
+          <a href="course-viewer.html">הקורסים שלי</a>
+          <a href="profile.html">פרטים אישיים</a>
+          <a href="index.html">יציאה</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="cr-main">
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb-bar" aria-label="ניווט מיקום">
+      <div class="breadcrumb-inner">
+        <a href="index.html" class="breadcrumb-link">עמוד הבית</a>
+        <span class="breadcrumb-sep" aria-hidden="true">›</span>
+        <span class="breadcrumb-current" aria-current="page">הקורסים שלי</span>
+      </div>
+    </nav>
+
+    <!-- ── My Courses section ──────────────────────────────── -->
+    <section class="cv-section" aria-labelledby="cv-heading">
+      <div class="cv-section-inner">
+
+        <h1 class="cv-section-title" id="cv-heading">הקורסים שלי</h1>
+
+        <div class="cv-card">
+
+          <!-- Info panel (right in RTL) -->
+          <div class="cv-info">
+            <div class="cv-progress" role="progressbar" aria-valuenow="39" aria-valuemin="0" aria-valuemax="100" aria-label="התקדמות בקורס: 39%">
+              <div class="cv-progress-track">
+                <div class="cv-progress-fill" style="width:39%"></div>
+                <span class="cv-progress-label">% <span class="cv-progress-num">39</span> הושלמו</span>
+              </div>
+            </div>
+            <h2 class="cv-title">קורס שוק ההון אונליין</h2>
+            <p class="cv-desc">הקורס המקיף בישראל ללימודי שוק ההון, מהבסיס ועד בניית תיק השקעות מלא. כולל תרגול מעשי על מניות וסיטואציות אמיתיות. ללמוד מכל מקום, בקצב שלך.</p>
+            <a href="course-overview.html" class="cv-btn">כניסה לקורס</a>
+          </div>
+
+          <!-- Vertical divider -->
+          <div class="cv-divider" aria-hidden="true"></div>
+
+          <!-- Features panel (left in RTL) -->
+          <div class="cv-features">
+            <div class="cv-feature">
+              <img src="images/icon_course_1.png" alt="" aria-hidden="true" width="52" height="50">
+              <div class="cv-feature-body">
+                <span class="cv-feature-title">קורס דיגיטלי</span>
+                <span class="cv-feature-sub">זמין אונליין ובזמן שמתאים לכם</span>
+              </div>
+            </div>
+            <div class="cv-feature">
+              <img src="images/icon_course_2.png" alt="" aria-hidden="true" width="52" height="50">
+              <div class="cv-feature-body">
+                <span class="cv-feature-title">ליווי ותרגול מעשי</span>
+                <span class="cv-feature-sub">הכוונה צמודה</span>
+              </div>
+            </div>
+            <div class="cv-feature">
+              <img src="images/icon_course_3.png" alt="" aria-hidden="true" width="52" height="50">
+              <div class="cv-feature-body">
+                <span class="cv-feature-title">מתאים לכל הרמות</span>
+                <span class="cv-feature-sub">למתחילים ולמתקדמים</span>
+              </div>
+            </div>
+            <div class="cv-feature">
+              <img src="images/icon_course_4.png" alt="" aria-hidden="true" width="52" height="50">
+              <div class="cv-feature-body">
+                <span class="cv-feature-title">47 שיעורים | 100 שעות לימוד</span>
+                <span class="cv-feature-sub">תוכן מקיף</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── More courses ────────────────────────────────────── -->
+    <section class="cv-more" aria-labelledby="cv-more-heading">
+      <div class="cv-more-inner">
+
+        <div class="cv-more-header">
+          <h2 class="cv-more-title" id="cv-more-heading">קורסים נוספים שאולי יעניינו אותך</h2>
+        </div>
+
+        <div class="cv-cards-grid">
+
+          <!-- Card: Personal -->
+          <article class="course-card">
+            <div class="card-top">
+              <span class="card-badge">קורס פרטני</span>
+              <div class="card-title-wrap">
+                <span class="card-title-main">קורס שוק ההון אישי</span>
+                <span class="card-title-sub">ליווי אחד על אחד</span>
+              </div>
+              <p class="card-desc">הקורס המקיף בישראל ללימודי שוק ההון, מהבסיס ועד בניית תיק השקעות מלא. כולל תרגול מעשי על מניות וסיטואציות אמיתיות, עם דגש על ליווי אישי והתאמה אישית לצרכים שלך.</p>
+            </div>
+            <div class="card-divider">
+              <span class="card-hours">קורס מותאם אישית</span>
+            </div>
+            <a href="course-personal.html" class="card-btn card-btn--green">פרטים נוספים</a>
+          </article>
+
+          <!-- Card: Frontal -->
+          <article class="course-card">
+            <div class="card-top">
+              <span class="card-badge">קורס פרונטלי</span>
+              <div class="card-title-wrap">
+                <span class="card-title-main">קורס שוק ההון פרונטלי</span>
+                <span class="card-title-sub">למידה בכיתה בליווי מרצה</span>
+              </div>
+              <p class="card-desc">הקורס המקיף בישראל ללימודי שוק ההון, מהבסיס ועד בניית תיק השקעות מלא. כולל תרגול מעשי על מניות וסיטואציות אמיתיות, בליווי מרצה ובקבוצה. ללמוד בצורה ממוקדת עם מענה בזמן אמת.</p>
+            </div>
+            <div class="card-divider card-divider--pricing">
+              <span class="card-hours">100 שעות לימוד</span>
+              <span class="card-price">15,000 <span class="price-currency">₪</span></span>
+            </div>
+            <a href="course-frontal.html" class="card-btn card-btn--green">פרטים נוספים</a>
+            <ul class="card-features" dir="rtl">
+              <li>מתאים לכל הרמות</li>
+              <li>לימוד מלא לניהול כסף והשקעות</li>
+              <li>בניית תיק השקעות לטווח ארוך</li>
+              <li>ניהול פיננסים: קופות גמל, פנסיה, קרן השתלמות</li>
+              <li>למידה בכיתה בליווי מרצה</li>
+              <li>ליווי בתקופה מוגדרת + קהילת דיסקורד</li>
+              <li>תרגול מעשי בליווי מרצה</li>
+              <li>צעד צעד יד ביד עד לביצוע עסקה בשוק ההון</li>
+              <li>הדרכה על כל המערכות החשובות</li>
+            </ul>
+          </article>
+
+        </div>
+
+        <div class="cv-more-cta">
+          <a href="courses.html" class="btn-secondary">לכל הקורסים</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ── Questions CTA ───────────────────────────────────── -->
+    <section class="cv-questions" aria-labelledby="cv-questions-heading">
+      <div class="cv-questions-card">
+        <h2 class="cv-questions-title" id="cv-questions-heading">יש לך שאלות? נשמח לעזור</h2>
+        <div class="cv-contact-row">
+
+          <div class="cv-contact-item">
+            <img src="images/icon_contact_whatsapp.png" alt="" aria-hidden="true" width="52" height="50">
+            <div class="cv-contact-body">
+              <span class="cv-contact-label">שלחו לנו וואטסאפ</span>
+              <a href="https://wa.me/9720540000000" class="cv-contact-value">054-000-0000</a>
+            </div>
+          </div>
+
+          <div class="cv-contact-item">
+            <img src="images/icon_contact_call.png" alt="" aria-hidden="true" width="52" height="50">
+            <div class="cv-contact-body">
+              <span class="cv-contact-label">התקשרו אלינו</span>
+              <a href="tel:0540000000" class="cv-contact-value">054-000-0000</a>
+            </div>
+          </div>
+
+          <div class="cv-contact-item">
+            <img src="images/icon_contact_email.png" alt="" aria-hidden="true" width="52" height="50">
+            <div class="cv-contact-body">
+              <span class="cv-contact-label">שלחו לנו מייל</span>
+              <a href="mailto:indicator.276@gmail.com" class="cv-contact-value">indicator.276@gmail.com</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+<script src="footer.js"></script>
+
+  <script>
+    // ── Logged-in nav: user dropdown ──────────────────────────────────────────
+    (function () {
+      var navUser    = document.getElementById('navUser');
+      var navUserBtn = document.getElementById('navUserBtn');
+      var dropdown   = document.getElementById('navUserDropdown');
+      if (!navUser || !navUserBtn) return;
+
+      navUserBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var isOpen = navUser.classList.toggle('open');
+        navUserBtn.setAttribute('aria-expanded', isOpen);
+      });
+
+      document.addEventListener('click', function (e) {
+        if (!navUser.contains(e.target)) {
+          navUser.classList.remove('open');
+          navUserBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && navUser.classList.contains('open')) {
+          navUser.classList.remove('open');
+          navUserBtn.setAttribute('aria-expanded', 'false');
+          navUserBtn.focus();
+        }
+      });
+    }());
+
+    // ── Mobile menu toggle ────────────────────────────────────────────────────
+    (function () {
+      var hamburger  = document.querySelector('.hamburger');
+      var mobileMenu = document.getElementById('mobile-menu-cv');
+      if (!hamburger || !mobileMenu) return;
+
+      hamburger.addEventListener('click', function () {
+        var isOpen = mobileMenu.classList.toggle('open');
+        hamburger.classList.toggle('open', isOpen);
+        hamburger.setAttribute('aria-expanded', isOpen);
+        mobileMenu.setAttribute('aria-hidden', !isOpen);
+      });
+
+      mobileMenu.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          mobileMenu.classList.remove('open');
+          hamburger.classList.remove('open');
+          hamburger.setAttribute('aria-expanded', false);
+          mobileMenu.setAttribute('aria-hidden', true);
+        });
+      });
+    }());
+  </script>
+
+</body>
+</html>

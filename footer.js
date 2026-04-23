@@ -1,0 +1,112 @@
+(function () {
+  var footerHTML = [
+    '<footer class="site-footer" aria-label="כותרת תחתונה">',
+    '',
+    '  <div class="footer-main">',
+    '',
+    '    <!-- Brand column -->',
+    '    <div class="footer-brand">',
+    '      <a href="index.html" aria-label="Indicator - עמוד הבית">',
+    '        <img src="images/logo.svg" alt="Indicator - האקדמיה ללימוד שוק ההון" class="footer-logo">',
+    '      </a>',
+    '      <div class="footer-contact">',
+    '        <a href="mailto:indicator.276@gmail.com" class="footer-contact-link">indicator.276@gmail.com</a>',
+    '        <a href="tel:0540000000" class="footer-contact-link">054-000-0000</a>',
+    '      </div>',
+    '      <div class="footer-social">',
+    '        <a href="#" class="footer-social-btn" aria-label="עמוד האינסטגרם שלנו">',
+    '          <img src="images/instagram.svg" alt="">',
+    '        </a>',
+    '        <a href="#" class="footer-social-btn" aria-label="עמוד הפייסבוק שלנו">',
+    '          <img src="images/facebook.svg" alt="">',
+    '        </a>',
+    '      </div>',
+    '    </div>',
+    '',
+    '    <!-- Company links -->',
+    '    <nav class="footer-col" aria-labelledby="footer-col-company">',
+    '      <h3 class="footer-col-heading" id="footer-col-company">',
+    '        <button class="footer-col-title" aria-expanded="false" aria-controls="footer-list-company">',
+    '          החברה',
+    '          <svg class="footer-col-chevron" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+    '        </button>',
+    '      </h3>',
+    '      <div class="footer-col-panel" id="footer-list-company">',
+    '        <div class="footer-col-panel-inner">',
+    '          <ul class="footer-col-list">',
+    '            <li><a href="about.html">אודות</a></li>',
+    '            <li><a href="contact.html">יצירת קשר</a></li>',
+    '          </ul>',
+    '        </div>',
+    '      </div>',
+    '    </nav>',
+    '',
+    '    <!-- Courses links -->',
+    '    <nav class="footer-col" aria-labelledby="footer-col-courses">',
+    '      <h3 class="footer-col-heading" id="footer-col-courses">',
+    '        <button class="footer-col-title" aria-expanded="false" aria-controls="footer-list-courses">',
+    '          הקורסים שלנו',
+    '          <svg class="footer-col-chevron" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+    '        </button>',
+    '      </h3>',
+    '      <div class="footer-col-panel" id="footer-list-courses">',
+    '        <div class="footer-col-panel-inner">',
+    '          <ul class="footer-col-list">',
+    '            <li><a href="courses.html">כל הקורסים</a></li>',
+    '            <li><a href="course-stock-market.html">קורס שוק ההון אונליין</a></li>',
+    '            <li><a href="course-frontal.html">קורס שוק ההון פרונטלי</a></li>',
+    '            <li><a href="course-personal.html">קורס שוק ההון אישי</a></li>',
+    '          </ul>',
+    '        </div>',
+    '      </div>',
+    '    </nav>',
+    '',
+    '    <!-- Useful info links -->',
+    '    <nav class="footer-col" aria-labelledby="footer-col-info">',
+    '      <h3 class="footer-col-heading" id="footer-col-info">',
+    '        <button class="footer-col-title" aria-expanded="false" aria-controls="footer-list-info">',
+    '          מידע שימושי',
+    '          <svg class="footer-col-chevron" aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+    '        </button>',
+    '      </h3>',
+    '      <div class="footer-col-panel" id="footer-list-info">',
+    '        <div class="footer-col-panel-inner">',
+    '          <ul class="footer-col-list">',
+    '            <li><a href="#">תנאי שימוש</a></li>',
+    '            <li><a href="#">מדיניות פרטיות</a></li>',
+    '            <li><a href="analysis.html">ניתוח מניות ומדדים</a></li>',
+    '          </ul>',
+    '        </div>',
+    '      </div>',
+    '    </nav>',
+    '',
+    '  </div><!-- /.footer-main -->',
+    '',
+    '  <!-- Bottom bar -->',
+    '  <div class="footer-bottom">',
+    '    <div class="footer-bottom-inner">',
+    '      <p class="footer-copyright">© כל הזכויות שמורות ל-Indicator | המכללה ללימודי שוק ההון</p>',
+    '      <p class="footer-disclaimer">אזהרת סיכון: מסחר א/או השקעה בשוק ההון כרוכים בסיכון גבוה ואינם מתאימים לכל אדם. ביצועי העבר אינם ערובה לתוצאות עתידיות. התוכן המוצג באתר הינו למטרות המחנכות בלבד. אינו מהווה ייעוץ השקעות או הגנה לפעולה מכל סוג, כל האמור הנו על דעתנו האישית בלבד.</p>',
+    '    </div>',
+    '  </div>',
+    '',
+    '</footer>',
+  ].join('\n');
+
+  // Insert footer before this <script> tag
+  document.currentScript.insertAdjacentHTML('beforebegin', footerHTML);
+
+  // ── Footer accordion (mobile only) ───────────────────────────────────────
+  document.addEventListener('DOMContentLoaded', function () {
+    var cols = Array.prototype.slice.call(document.querySelectorAll('.footer-col'));
+    cols.forEach(function (col) {
+      var btn = col.querySelector('.footer-col-title');
+      if (!btn) return;
+      btn.addEventListener('click', function () {
+        var isOpen = col.classList.contains('footer-col--open');
+        col.classList.toggle('footer-col--open', !isOpen);
+        btn.setAttribute('aria-expanded', String(!isOpen));
+      });
+    });
+  });
+}());
