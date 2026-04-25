@@ -228,20 +228,7 @@ a { text-decoration: none; color: inherit; }
 .why-section,
 .faq-section,
 .cta-banner-section {
-  padding-block: 80px;
-}
-
-@media (max-width: 767px) {
-  .courses-section,
-  .audience-section,
-  .video-section,
-  .contact-section,
-  .opps-section,
-  .why-section,
-  .faq-section,
-  .cta-banner-section {
-    padding-block: 45px;
-  }
+  padding-block: 40px;
 }
 
 /* ============================================================
