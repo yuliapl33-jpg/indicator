@@ -160,18 +160,17 @@ a { text-decoration: none; color: inherit; }
   padding: 4px;
   position: relative;
 }
-.hamburger span { display: block; width: 22px; height: 2px; background: var(--color-white); border-radius: 1px; transition: opacity 0.2s; }
-.hamburger.open span { opacity: 0; }
+.hamburger span { display: block; width: 22px; height: 2px; background: var(--color-white); }
+.hamburger.open span { display: none; }
 .hamburger::before,
 .hamburger::after {
   content: '';
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 20px;
+  width: 18px;
   height: 2px;
   background: var(--color-white);
-  border-radius: 1px;
   opacity: 0;
   transition: opacity 0.2s, transform 0.3s;
   transform: translate(-50%, -50%) rotate(0deg);
