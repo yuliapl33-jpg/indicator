@@ -223,6 +223,22 @@
 
 <script src="footer.js"></script>
   <script src="modal.js"></script>
+  <script>
+    document.querySelectorAll('.faq-row').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('faq-item--open');
+        document.querySelectorAll('.faq-item--open').forEach(el => {
+          el.classList.remove('faq-item--open');
+          el.querySelector('.faq-row').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('faq-item--open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>

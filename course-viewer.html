@@ -103,15 +103,18 @@
 
           <!-- Info panel (right in RTL) -->
           <div class="cv-info">
-            <div class="cv-progress" role="progressbar" aria-valuenow="39" aria-valuemin="0" aria-valuemax="100" aria-label="התקדמות בקורס: 39%">
-              <div class="cv-progress-track">
+            <div class="cv-progress">
+              <div class="cv-progress-header">
+                <span class="cv-progress-title">מד התקדמות</span>
+                <span class="cv-progress-count">1% (1/27)</span>
+              </div>
+              <div class="cv-progress-track" role="progressbar" aria-valuenow="39" aria-valuemin="0" aria-valuemax="100" aria-label="התקדמות בקורס: 39%">
                 <div class="cv-progress-fill" style="width:39%"></div>
-                <span class="cv-progress-label">% <span class="cv-progress-num">39</span> הושלמו</span>
               </div>
             </div>
             <h2 class="cv-title">קורס שוק ההון אונליין</h2>
             <p class="cv-desc">הקורס המקיף בישראל ללימודי שוק ההון, מהבסיס ועד בניית תיק השקעות מלא. כולל תרגול מעשי על מניות וסיטואציות אמיתיות. ללמוד מכל מקום, בקצב שלך.</p>
-            <a href="course-overview.html" class="cv-btn">כניסה לקורס</a>
+            <a href="course-lesson.html" class="cv-btn">כניסה לקורס</a>
           </div>
 
           <!-- Vertical divider -->
@@ -305,6 +308,18 @@
           mobileMenu.setAttribute('aria-hidden', true);
         });
       });
+    }());
+
+    // ── Course progress from localStorage ───────────────────────
+    (function () {
+      var data = JSON.parse(localStorage.getItem('courseProgress') || 'null');
+      if (!data) return;
+      var fill  = document.querySelector('.cv-progress-fill');
+      var count = document.querySelector('.cv-progress-count');
+      var track = document.querySelector('.cv-progress-track');
+      if (fill)  fill.style.width = data.pct + '%';
+      if (count) count.textContent = data.pct + '% (' + data.viewed + '/' + data.total + ')';
+      if (track) track.setAttribute('aria-valuenow', data.pct);
     }());
   </script>
 
