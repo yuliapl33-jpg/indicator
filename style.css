@@ -605,7 +605,7 @@ h1.courses-page-title { font-size: 80px; color: var(--color-dark-blue); font-wei
   .site-header { padding-inline: 12px; }
   .nav-inner { padding-inline: 15px; }
   .nav-logo img { width: 160px; height: auto; }
-  .hero { padding-top: 130px; height: 60svh; }
+  .hero { padding-top: 120px; height: 70svh; }
   .hero-bg { object-fit: cover; object-position: center bottom; }
   .hero-title { font-size: 35px; line-height: 1.0; }
   .hero-desc { font-size: 16px; }
