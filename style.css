@@ -228,7 +228,7 @@ a { text-decoration: none; color: inherit; }
 .why-section,
 .faq-section,
 .cta-banner-section {
-  padding-block: 80px;
+  padding-block: 40px;
 }
 
 @media (max-width: 767px) {
@@ -605,8 +605,8 @@ h1.courses-page-title { font-size: 80px; color: var(--color-dark-blue); font-wei
   .site-header { padding-inline: 12px; }
   .nav-inner { padding-inline: 15px; }
   .nav-logo img { width: 160px; height: auto; }
-  .hero { padding-top: 130px; height: 80svh; }
-  .hero-bg { object-fit: cover; }
+  .hero { padding-top: 130px; height: 60svh; }
+  .hero-bg { object-fit: cover; object-position: center bottom; }
   .hero-title { font-size: 35px; line-height: 1.0; }
   .hero-desc { font-size: 16px; }
   .btn-primary { width: 180px; height: 52px; font-size: 17px; }
@@ -714,6 +714,11 @@ h1.courses-page-title { font-size: 80px; color: var(--color-dark-blue); font-wei
   .btn-submit {
     width: 100%;
   }
+    
+@media (max-width: 320px) {
+   .hero { padding-top: 110px; height: 70svh; } 
+   .hero-title { font-size: 30px; line-height: 1.0; }
+}  
 
   /* Audience section — unified inset */
   .audience-section {
@@ -1523,7 +1528,7 @@ h1.courses-page-title { font-size: 80px; color: var(--color-dark-blue); font-wei
   background-color: var(--color-section-bg);
   direction: rtl;
   overflow: hidden;
-  padding-block: 80px 72px;
+  padding-block: 40px 72px;
 }
 
 /* ── Header ──────────────────────────────────────────────── */
@@ -2202,7 +2207,7 @@ h1.courses-page-title { font-size: 80px; color: var(--color-dark-blue); font-wei
 
 /* ── Contact page main section ───────────────────────────── */
 .cp-section {
-  padding-block: 50px 80px;
+  padding-block: 50px 40px;
   padding-inline: 20px;
   direction: rtl;
 }
@@ -3660,7 +3665,7 @@ h1.courses-page-title { font-size: 80px; color: var(--color-dark-blue); font-wei
   .csp-chapter-card        { padding: 36px 28px; }
 
   .csp-contact-row { flex-direction: column; align-items: flex-start; gap: 20px; }
-  .csp-cta-card    { padding: 40px 28px 44px; }
+  .csp-cta-card    { padding: 40px 40px 44px; }
   .csp-hero-title {text-align: center; }
   .csp-hero-desc {font-size: 16px; text-align: center; }
   .csp-hero-feature-title {font-size: 18px;}
@@ -3680,7 +3685,7 @@ h1.courses-page-title { font-size: 80px; color: var(--color-dark-blue); font-wei
   .csp-hero-wrap,
   .csp-benefits-wrap,
   .csp-curriculum-wrap,
-  .csp-cta-wrap  { padding-inline: 16px;}
+  .csp-cta-wrap  { padding-inline: 12px;}
   .csp-benefit-card { padding: 5px 10px; border-radius: 15px; }
   .csp-benefit-text { font-size: 16px; }
     .csp-benefit-icon { width: 30px; height: 30px; }

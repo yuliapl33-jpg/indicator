@@ -16,12 +16,15 @@
 <script src="header.js"></script>
 
   <section class="hero" aria-label="אזור הכותרת הראשי">
-    <img
-      class="hero-bg"
-      src="images/header_bg.png"
-      alt=""
-      aria-hidden="true"
-    >
+    <picture>
+      <source media="(max-width: 600px)" srcset="images/header_bg_mobile.jpg">
+      <img
+        class="hero-bg"
+        src="images/header_bg.png"
+        alt=""
+        aria-hidden="true"
+      >
+    </picture>
 
     <div class="hero-content">
       <h1 class="hero-title">בואו ללמוד כבר היום<br>איך לסחור בשוק ההון!</h1>
