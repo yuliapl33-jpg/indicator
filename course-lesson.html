@@ -148,7 +148,7 @@
                 </div>
               </li>
 
-              <li class="cl-lesson cl-lesson--active" tabindex="0" aria-current="true">
+              <li class="cl-lesson cl-lesson--active" tabindex="0" aria-current="true" data-vimeo="1188675298">
                 <span class="cl-icon cl-icon--todo" aria-hidden="true"></span>
                 <div class="cl-lesson-meta">
                   <span class="cl-lesson-name">מהו שוק ההון ומהי הבורסה</span>
@@ -393,6 +393,7 @@
           <!-- Video player -->
           <div class="cl-video-player">
             <div id="yt-player" style="display:none"></div>
+            <div id="vimeo-player" style="display:none;width:100%;height:100%;"></div>
             <div class="cl-video-placeholder" aria-hidden="true">
               <div class="cl-play-circle">
                 <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
@@ -411,6 +412,7 @@
   </main>
 
   <script src="footer.js"></script>
+  <script src="https://player.vimeo.com/api/player.js"></script>
 
   <script>
     // ── Nav: user dropdown ──────────────────────────────────────
@@ -499,6 +501,7 @@
 
     // ── YouTube IFrame API ──────────────────────────────────────
     var ytPlayer       = null;
+    var vimeoPlayerObj = null;
     var watchingLesson = null; // the lesson whose video is loaded in the player
     var pendingVideo   = null; // videoId to load once the API is ready
 
@@ -583,12 +586,17 @@
         var nameEl = lesson.querySelector('.cl-lesson-name');
         if (titleEl) titleEl.textContent = nameEl ? nameEl.textContent.trim() : '';
 
-        // Load video into YT player or show placeholder
-        var videoId     = lesson.dataset.video;
-        var ytContainer = document.getElementById('yt-player');
-        watchingLesson  = lesson;
+        // Load video into YT/Vimeo player or show placeholder
+        var videoId      = lesson.dataset.video;
+        var vimeoId      = lesson.dataset.vimeo;
+        var ytContainer  = document.getElementById('yt-player');
+        var vimeoContainer = document.getElementById('vimeo-player');
+        watchingLesson   = lesson;
 
         if (videoId) {
+          // YouTube
+          vimeoContainer.style.display = 'none';
+          if (vimeoPlayerObj) { try { vimeoPlayerObj.destroy(); } catch (e) {} vimeoPlayerObj = null; }
           if (ytPlayer && ytPlayer.cueVideoById) {
             ytPlayer.cueVideoById(videoId);
             ytContainer.style.display = 'block';
@@ -596,10 +604,33 @@
             pendingVideo = videoId;
           }
           placeholderEl.style.display = 'none';
+        } else if (vimeoId) {
+          // Vimeo
+          if (ytPlayer && ytPlayer.stopVideo) { try { ytPlayer.stopVideo(); } catch (e) {} }
+          ytContainer.style.display = 'none';
+          if (vimeoPlayerObj) { try { vimeoPlayerObj.destroy(); } catch (e) {} vimeoPlayerObj = null; }
+          vimeoContainer.innerHTML = '';
+          var vimeoIframe = document.createElement('iframe');
+          vimeoIframe.src = 'https://player.vimeo.com/video/' + vimeoId + '?badge=0&autopause=0&player_id=0&app_id=58479';
+          vimeoIframe.setAttribute('frameborder', '0');
+          vimeoIframe.setAttribute('allow', 'autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share');
+          vimeoIframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+          vimeoIframe.style.cssText = 'width:100%;height:100%;border:none;display:block;';
+          vimeoContainer.appendChild(vimeoIframe);
+          vimeoContainer.style.display = 'block';
+          placeholderEl.style.display = 'none';
+          if (window.Vimeo) {
+            var capturedLesson = lesson;
+            vimeoPlayerObj = new Vimeo.Player(vimeoIframe);
+            vimeoPlayerObj.on('play', function () { markLessonDone(capturedLesson); });
+          }
         } else {
           watchingLesson = null;
           if (ytPlayer && ytPlayer.stopVideo) { try { ytPlayer.stopVideo(); } catch (e) {} }
           ytContainer.style.display = 'none';
+          if (vimeoPlayerObj) { try { vimeoPlayerObj.destroy(); } catch (e) {} vimeoPlayerObj = null; }
+          vimeoContainer.innerHTML = '';
+          vimeoContainer.style.display = 'none';
           placeholderEl.style.display = 'flex';
         }
 
@@ -627,6 +658,29 @@
       selectLesson(currentIdx);
       updateChapterProgress();
       updateProgress();
+    }());
+
+    // ── Vimeo durations via oEmbed ──────────────────────────────
+    (function () {
+      document.querySelectorAll('.cl-lesson[data-vimeo]').forEach(function (li) {
+        var id = li.dataset.vimeo;
+        fetch('https://vimeo.com/api/oembed.json?url=https://vimeo.com/' + id)
+          .then(function (r) { return r.json(); })
+          .then(function (data) {
+            if (!data.duration) return;
+            var sub = li.querySelector('.cl-lesson-sub');
+            if (sub) sub.textContent = fmtSec(data.duration);
+          })
+          .catch(function () {});
+      });
+
+      function fmtSec(s) {
+        var h = Math.floor(s / 3600);
+        var m = Math.floor((s % 3600) / 60);
+        var sec = s % 60;
+        return pad(h) + ':' + pad(m) + ':' + pad(sec);
+      }
+      function pad(n) { return String(n).padStart(2, '0'); }
     }());
 
     // ── YouTube durations via Data API v3 ───────────────────────
